@@ -1,5 +1,5 @@
--Back buttom
--Random Temp???
 -Think of 3 new "usage cases"
 -Triggering notificationm????
+-Display clock on home screen (has to be javascript) (https://phpcoder.tech/display-current-date-and-time-in-html-using-javascript/)
+-Random Temp???
 -Image package
