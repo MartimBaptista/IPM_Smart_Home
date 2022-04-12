@@ -1,0 +1,19 @@
+
+main {
+    display: grid;
+    grid-template-areas:    "header"
+                            "items"
+                            "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+div {
+    grid-area: items;
+}
+
+footer {
+    grid-area: footer;
+}
