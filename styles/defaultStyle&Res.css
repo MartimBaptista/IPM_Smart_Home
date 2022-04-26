@@ -12,5 +12,22 @@ body {
     /*Rounded Border*/
     border-radius: 20px;
     border: 2px solid black;
+
+    /*Font*/
+    font-family: Roboto;
     
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Medium.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: bolder;
 }
