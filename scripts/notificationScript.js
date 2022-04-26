@@ -1,7 +1,7 @@
 var noticationList = document.getElementById("notificationList");
 
-function addNotification(par) {
-    const text = document.createTextNode("- " + par);
+function addNotification(arg) {
+    const text = document.createTextNode(arg);
     const item = document.createElement("li");
     const buttom = document.createElement("input");
     buttom.type = "button";
@@ -15,3 +15,6 @@ function addNotification(par) {
 function removeNotification() {
     this.parentElement.remove();
 }
+
+//Adding a starting notification for case use
+addNotification("Intruso detetado!!!");
