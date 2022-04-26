@@ -1,5 +1,4 @@
 var noticationList = document.getElementById("notificationList");
-alert(noticationList); //DEBUG
 
 function addNotificationn() {
     const text = document.createTextNode("Notification Created by script");
