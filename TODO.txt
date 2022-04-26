@@ -1,3 +1,7 @@
 -Think of 3 new "usage cases"
 -Random Temp???
 -Image package
+-Custom font (google font looks good)
+-Add buttons and more info on the notifications
+-do the lights (maybe have sliders like RGB shit)
+-Storage (scary stuf prob)
