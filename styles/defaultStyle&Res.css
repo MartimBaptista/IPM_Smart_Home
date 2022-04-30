@@ -1,5 +1,8 @@
 body {
     background-color: dimgray;
+    text-decoration: none;
+    font-size: x-large;
+    color: #525E75;
 }
 
 a {
@@ -17,8 +20,8 @@ a {
     background-color: #F1DDBF;
 
     /*Rounded Border*/
-    border-radius: 20px;
-    border: 2px solid black;
+    border-radius: 30px;
+    border: 4px solid black;
 
     /*Font*/
     font-family: Roboto;
