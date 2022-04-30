@@ -4,6 +4,9 @@ function addNotification(arg) {
     const text = document.createTextNode(arg);
     const item = document.createElement("li");
     const button1 = document.createElement("input");
+
+    const br = document.createElement("br");
+
     button1.type = "button";
     button1.value = "Sim";
     button1.addEventListener("click", removeNotification);
@@ -15,6 +18,7 @@ function addNotification(arg) {
     
     
     item.appendChild(text);
+    item.append(br)
     item.append(button1);
     item.append(button2);
     noticationList.appendChild(item);
