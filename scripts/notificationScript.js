@@ -8,7 +8,7 @@ function addNotification(arg) {
     buttom.value = "OK";
     buttom.addEventListener("click", removeNotification);
     item.appendChild(text);
-    item.append(buttom);
+    item.appendChild(buttom);
     noticationList.appendChild(item);
 }
 

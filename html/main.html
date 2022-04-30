@@ -1,13 +1,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="../styles/defaultStyle&Res.css">
+        <link rel="stylesheet" href="../styles/mainStyle.css">
     </head>
 
     <body>
         <div id="background">
             <header>
-                <p>São 
-                <input type="text" id="currentTime"></p>
+                <p><a id="clock"></a></p>
                 <a href="notificacoes.html">
                     <img src="https://cdn4.iconfinder.com/data/icons/ui-outline-1-of-5/100/ui_outline_1-19-512.png" alt="Menu" width="10%">
                 </a>
@@ -18,10 +18,10 @@
             </header>
 
             <main>
-                <ul>
+                <ul id="rooms">
                     <li>
                         <a href="notready.html">Quarto</a>
-                        <ul>
+                        <ul id="functions">
                             <li>
                                 <a href ="notready.html">AC</a>
                             </li>
@@ -32,7 +32,7 @@
                     </li>
                     <li>
                         <a href="cozinha/cozinha.html">Cozinha</a>
-                        <ul>
+                        <ul id="functions">
                             <li>
                                 <a href ="cozinha/temperatura.html">AC</a>
                             </li>
@@ -46,7 +46,7 @@
                     </li>
                     <li>
                         <a href="notready.html">Sala de Estar</a>
-                        <ul>
+                        <ul id="functions">
                             <li>
                                 <a href ="notready.html">Luzes</a>
                             </li>
@@ -54,7 +54,7 @@
                     </li>
                     <li>
                         <a href="notready.html">Casa de Banho</a>
-                        <ul>
+                        <ul id="functions">
                             <li>
                                 <a href ="notready.html">Sanita</a>
                             </li>
@@ -65,7 +65,7 @@
                     </li>
                     <li>
                         <a href="notready.html">Corredor</a>
-                        <ul>
+                        <ul id="functions">
                             <li>
                                 <a href ="notready.html">Luzes</a>
                             </li>
@@ -73,7 +73,7 @@
                     </li>
                     <li>
                         <a href="varanda/varanda.html">Varanda</a>
-                        <ul>
+                        <ul id="functions">
                             <li>
                                 <a href ="varanda/rega.html">Rega</a>
                             </li>
@@ -91,6 +91,6 @@
                 <a href="notready.html">Energia</a>
             </footer>
         </div>
-        <script src="../scripts/horaMenu.js"></script>
+        <script src="../scripts/mainScript.js"></script>
     </body>
 </html>
