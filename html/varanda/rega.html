@@ -4,18 +4,116 @@
     </head>
     <body>
         <div id="background">
-            <header>
-                <a href="varanda.html">voltar</a>
-                <h1>Rega</h1>
-                <a href="add.html">            
-                    <img src="../../imgs/add.png" alt="adicionar nova rega" width="20px">
-                </a>
-            </header>
-            <main>
-                <ul>
-                    <li>9:00 - 10:00</li>
-                </ul>
-            </main>
+            
+            <div id="rega">
+                <header>
+                    <a href="varanda.html">Voltar</a>
+                    <h1>Rega</h1>
+                    <a href="add.html">            
+                        <img src="../../imgs/add.png" alt="adicionar nova rega" width="20px">
+                    </a>
+                </header>
+                <main>
+                    <ul id="listaRega">
+                        <li>
+                            <h4>Rega1</h4>
+                            <ul>
+                                <p>18:00 - 19:00</p>
+                                <p>Todos os dias <input type="checkbox" name="everyDay" disabled></p>
+                                <span> Segunda-feira -- Terça-feira</span>
+                                <p>Todos os meses <input type="checkbox" name="everyMonth" disabled></p>
+                                <span> Janeiro -- Março</span>
+                            </ul>
+                            
+                        </li>
+                    </ul>
+                </main>
+            </div>
+
+            <div id="addRega" style=" display: none;">
+                <header>
+                    <a href="rega.html">Voltar</a>
+                    <h1>Adicionar nova rega</h1>
+                </header>
+                <main>
+                    <p>Início   <input type="time" id="init"></p>
+                    <p>Fim      <input type="time" id="end"></p>     
+    
+                    <br>
+    
+                    <p>Todos os Meses <input type="checkbox" id="everyMonth" checked >
+
+                        <p>
+                            De 
+                            <select id="fromM">
+                                <option value="0">Janeiro</option>
+                                <option value="1">Fevereiro</option>
+                                <option value="2">Março</option>
+                                <option value="3">Abril</option>
+                                <option value="4">Maio</option>
+                                <option value="5">Junho</option>
+                                <option value="6">Julho</option>
+                                <option value="7">Agosto</option>
+                                <option value="8">Setembro</option>
+                                <option value="9">Outubro</option>
+                                <option value="10">Novembro</option>
+                                <option value="11">Dezembro</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            A
+                            <select id="toM">
+                                <option value="0">Janeiro</option>
+                                <option value="1">Fevereiro</option>
+                                <option value="2">Março</option>
+                                <option value="3">Abril</option>
+                                <option value="4">Maio</option>
+                                <option value="5">Junho</option>
+                                <option value="6">Julho</option>
+                                <option value="7">Agosto</option>
+                                <option value="8">Setembro</option>
+                                <option value="9">Outubro</option>
+                                <option value="10">Novembro</option>
+                                <option value="11" selected>Dezembro</option>
+                            </select>
+                        </p> 
+                    </p>
+    
+                    <p>Todos os Dias  <input type="checkbox" id="everyDay" checked>
+                        <p>
+                            De 
+                            <select id="fromD">
+                                <option value="0">Segunda-feira</option>
+                                <option value="1">Terça-feira</option>
+                                <option value="2">Quarta-feira</option>
+                                <option value="3">Quinta-feira</option>
+                                <option value="4">Sexta-feira</option>
+                                <option value="5">Sábado</option>
+                                <option value="6">Domingo</option>
+                            </select>
+                        </p>
+                    
+                        <p> A
+                            <select id="toD">
+                                <option value="0">Segunda-feira</option>
+                                <option value="1">Terça-feira</option>
+                                <option value="2">Quarta-feira</option>
+                                <option value="3">Quinta-feira</option>
+                                <option value="4">Sexta-feira</option>
+                                <option value="5">Sábado</option>
+                                <option value="6" selected>Domingo</option>
+                            </select>
+                        </p>
+                    </p>
+    
+                    <input type="button" value="Confirmar" onclick="addRega()">
+    
+                </main>
+                <footer>
+    
+                </footer>
+            </div>
             <footer>
                 <a href="../main.html">Menu Principal</a>
             </footer>
