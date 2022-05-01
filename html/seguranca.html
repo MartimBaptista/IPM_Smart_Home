@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/defaultStyle&Res.css">
+    </head>
+
+    <body>
+        <div id="background"> 
+            <main>
+                <header>
+                    <a href="main.html">voltar</a>
+                    <h1>Segurança</h1>
+                </header>
+                <h3 id="TrancarHead">Trancar Casa:</h3>
+                <ul id="TrancarCasa">
+                    <li><input type="checkbox" id="Porta Entrada">
+                    <label for="Porta Entrada">Porta Entrada</label></li>
+                    <li><input type="checkbox" id="Janelas Sala">
+                    <label for="Janelas Sala">Janelas Sala</label></li>
+                    <li><input type="checkbox" id="Janelas Quarto">
+                    <label for="Janelas Quarto">Janelas Quarto</label></li>
+                    <li><input type="checkbox" id="Janelas Cozinha">
+                    <label for="Janelas Cozinha">Janelas Cozinha</label></li>
+                    <li><input type="checkbox" id="Varanda">
+                    <label for="Varanda">Varanda</label></li>
+
+                </ul>
+
+                <br>
+
+                <input type="checkbox" id="TrancarTodas" onclick="selectAllDisableList('TrancarTodas', 'TrancarCasa')"> 
+                <label for="TrancarTodas">Trancar Todas</label>
+            
+                <script src="../scripts/selectAll.js"></script>
+            </main>
+        </div>
+    </body>
+</html>

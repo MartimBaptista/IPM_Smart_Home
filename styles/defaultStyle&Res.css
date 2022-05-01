@@ -27,6 +27,23 @@ a {
     font-family: Roboto;
     
 }
+
+/*-------------Segurança----------------*/
+#TrancarCasa{
+    list-style-type: none;
+    padding-inline-start: 15px;
+    margin-top: 10px;
+}
+
+#TrancarHead{
+    margin-bottom: 10px;
+}
+
+#TrancarTodas{
+    margin-left: 20px;
+}
+/*---------------------------------------*/
+
 @font-face {
     font-family: Roboto;
     src: url("../fonts/Roboto-Regular.ttf");
