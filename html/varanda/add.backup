@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../../styles/defaultStyle&Res.css">
+        <script src="/scripts/regaScript.js"></script>
+    </head>
+    
+    <body>
+        <div id="background">
+            <header>
+                <a href="rega.html">Voltar</a>
+                <h1>Adicionar nova rega</h1>
+            </header>
+            <main>
+                <p>Nome     <input type="text" id="name"></p>
+                <br>
+                <p>Início   <input type="time" id="init" value="12"></p>
+                <p>Fim      <input type="time" id="end"></p>     
+                <br>
+                <p>Todos os Meses <input type="checkbox" id="everyMonth" checked >
+
+                    <p>
+                        De 
+                        <select id="fromM">
+                            <option value="Janeiro" selected>Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Março">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        A
+                        <select id="toM">
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Março">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro" selected>Dezembro</option>
+                        </select>
+                    </p> 
+                </p>
+
+                <p>Todos os Dias  <input type="checkbox" id="everyDay" checked>
+                    <p>
+                        De 
+                        <select id="fromD">
+                            <option value="Segunda-feira" selected>Segunda-feira</option>
+                            <option value="Terça-feira">Terça-feira</option>
+                            <option value="Quarta-feira">Quarta-feira</option>
+                            <option value="Quinta-feira">Quinta-feira</option>
+                            <option value="Sexta-feira">Sexta-feira</option>
+                            <option value="Sábado">Sábado</option>
+                            <option value="Domingo">Domingo</option>
+                        </select>
+                    </p>
+
+                
+                    <p> A
+                        <select id="toD">
+                            <option value="Segunda-feira">Segunda-feira</option>
+                            <option value="Terça-feira">Terça-feira</option>
+                            <option value="Quarta-feira">Quarta-feira</option>
+                            <option value="Quinta-feira">Quinta-feira</option>
+                            <option value="Sexta-feira">Sexta-feira</option>
+                            <option value="Sábado">Sábado</option>
+                            <option value="Domingo" selected>Domingo</option>
+                        </select>
+                    </p>
+                </p>
+
+                <input type="button" value="Confirmar" onclick="addRega()">
+
+                <input type="button" value="Anothe" onclick="anotheOne2()">
+            </main>
+
+            <footer>
+                <p>The node value of the first button element is:</p>
+                <p id="demo"></p>
+
+                <input type="time" id="init1" >
+                <script>
+                var element = document.getElementById("init1");
+                var today = new Date();
+                element.value = today.getHours() + ":" + today.getMinutes();
+                
+                let value = element.value;  
+                </script>
+            </footer>
+        </div>
+    </body>
+</html>

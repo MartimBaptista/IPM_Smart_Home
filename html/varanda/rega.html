@@ -1,9 +1,13 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../../styles/defaultStyle&Res.css">
+        <link rel="stylesheet" href="/styles/defaultStyle&Res.css">
+        <script src="/scripts/regaScript.js"></script>
+        <script src="/scripts/hideToggle.js"></script>
+
     </head>
     <body>
         <div id="background">
+<<<<<<< HEAD
             <header>
                 <a href="varanda.html" id="VoltarButton">voltar</a>
                 <h1>Rega</h1>
@@ -19,6 +23,116 @@
             <footer>
                 <a href="../main.html">Menu Principal</a>
             </footer>
+=======
+            
+            
+            <div id="rega">
+                <header>
+                    <a href="varanda.html">Voltar</a>
+                    <h1>Rega</h1>
+                     <button onclick="toggleAddRega()"><img src="/imgs/add.png" alt="Adicionar rega" width="10px" > Adicionar</button>
+                </header>
+                <main id="listaRega">
+                    <ul >
+                        <!--<li>
+                            <h4>Rega1</h4>
+                            <ul>
+                                <p>18:00 - 19:00</p>
+                                <p>Todos os meses <input type="checkbox" name="everyMonth" disabled></p>
+                                <span> Janeiro -- Março</span>
+                                <p>Todos os dias <input type="checkbox" name="everyDay" disabled></p>
+                                <span> Segunda-feira -- Terça-feira</span>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </main>
+            </div>
+
+            <div id="addRega" hidden>
+                <header>
+                    <a href="rega.html">Voltar</a>
+                    <h1>Adicionar nova rega</h1>
+                </header>
+                <main>
+                    <p>Nome     <input type="text" id="name"></p>
+                    <br>
+                    <p>Início   <input type="time" id="init" value="12"></p>
+                    <p>Fim      <input type="time" id="end"></p>     
+                    <br>
+                    <p>Todos os Meses <input type="checkbox" id="everyMonth" checked >
+    
+                        <p>
+                            De 
+                            <select id="fromM">
+                                <option value="Janeiro" selected>Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>
+                            </select>
+                        </p>
+    
+                        <p>
+                            A
+                            <select id="toM">
+                                <option value="Janeiro">Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro" selected>Dezembro</option>
+                            </select>
+                        </p> 
+                    </p>
+    
+                    <p>Todos os Dias  <input type="checkbox" id="everyDay" checked>
+                        <p>
+                            De 
+                            <select id="fromD">
+                                <option value="Segunda-feira" selected>Segunda-feira</option>
+                                <option value="Terça-feira">Terça-feira</option>
+                                <option value="Quarta-feira">Quarta-feira</option>
+                                <option value="Quinta-feira">Quinta-feira</option>
+                                <option value="Sexta-feira">Sexta-feira</option>
+                                <option value="Sábado">Sábado</option>
+                                <option value="Domingo">Domingo</option>
+                            </select>
+                        </p>
+    
+                    
+                        <p> A
+                            <select id="toD">
+                                <option value="Segunda-feira">Segunda-feira</option>
+                                <option value="Terça-feira">Terça-feira</option>
+                                <option value="Quarta-feira">Quarta-feira</option>
+                                <option value="Quinta-feira">Quinta-feira</option>
+                                <option value="Sexta-feira">Sexta-feira</option>
+                                <option value="Sábado">Sábado</option>
+                                <option value="Domingo" selected>Domingo</option>
+                            </select>
+                        </p>
+                    </p>
+    
+                    <input type="button" value="Confirmar" onclick="addRega(); toggleAddRega()">
+                </main>
+    
+                <footer>
+                    <p>TODO Footer</p>
+                </footer>
+>>>>>>> 8f65ecd8a45f21f0510544bb636aed20d205ab6a
         </div>
     </body>
 </html>
