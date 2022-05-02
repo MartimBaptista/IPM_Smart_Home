@@ -19,14 +19,11 @@ a {
     padding: 10px;
     padding-top: 15px;
     background-color: #F1DDBF;
-
     /*Rounded Border*/
     border-radius: 30px;
     border: 4px solid black;
-
     /*Font*/
     font-family: Roboto;
-    
 }
 
 #VoltarButton{

@@ -1,25 +1,33 @@
-var noticationList = document.getElementById("notificationList");
+//Hooking the controler
+const titleInput = document.getElementById("notification_title");
+const descriptionInput = document.getElementById("notification_description");
+const noticationList = document.getElementById("notificationList");
+const send = document.getElementById("send");
+send.addEventListener("click", addNotification);
 
-function addNotification(_title, _desc) {
+function addNotification(){
 
     //Title
     const title = document.createElement("a");
-    title.appendChild(document.createTextNode(_title));
+    title.appendChild(document.createTextNode(titleInput.value));
+    titleInput.value = "";
     title.className = "title";
     //Description
     const desc = document.createElement("a");
-    desc.appendChild(document.createTextNode(_desc));
+    desc.appendChild(document.createTextNode(descriptionInput.value));
+    descriptionInput.value = "";
     desc.className = "desc";
     //Button
     const button = document.createElement("input");
     button.type = "button";
     button.addEventListener("click", removeNotification);
-    //button.value = "OK";
+    button.value = "OK";
     
     //Containers
     const gridText = document.createElement("div");
     gridText.className = "grid-text";
     gridText.appendChild(title);
+    gridText.appendChild(document.createElement("br"));
     gridText.appendChild(desc);
 
     const gridButton = document.createElement("div");
@@ -43,6 +51,6 @@ function removeNotification() {
 }
 
 //Adding a starting notification for case use
-addNotification("Intruso detetado!", "Um intruso foi detetado idk what else u want to know");
-
-//
+titleInput.value = "Intruso detetado!";
+descriptionInput.value = "Um intruso foi detetado idk what else u want to know";
+addNotification();
