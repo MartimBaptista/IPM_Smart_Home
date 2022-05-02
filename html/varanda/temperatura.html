@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="../../styles/defaultStyle&Res.css">
     </head>
+    <script src="../../scripts/tempIncDec.js"></script>
     <body>
         <div id="background">
             <header>
@@ -9,9 +10,9 @@
                 <h1>Temperatura</h1>
             </header>
             <main>
-                <button type="button" onclick=>-</button>
-                22Cº
-                <button type="button" onclick=>+</button> </h2>
+                <button type="button" onclick="dec('valueTemp')">-</button>
+                <span id="valueTemp">22</span>ºC
+                <button type="button" onclick="inc('valueTemp')">+</button> </h2>
                 <h4>50% de Humidade</h4>
             </main>
             <footer>

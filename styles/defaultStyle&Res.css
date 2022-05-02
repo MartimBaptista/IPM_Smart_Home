@@ -36,34 +36,6 @@ a {
     border-width: 4;
 }
 
-/*-------------Segurança----------------*/
-#TrancarCasa{
-    list-style-type: none;
-    padding-inline-start: 15px;
-    margin-top: 10px;
-}
-
-#TrancarHead{
-    margin-bottom: 10px;
-}
-
-#TrancarTodas{
-    margin-left: 20px;
-}
-
-#securityCam{
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 2px 8px;
-    padding-top: 25px;
-    padding-bottom: px;
-    position: relative;
-    top: 30px;
-    right: -280px;
-    filter: invert(36%) sepia(8%) saturate(1497%) hue-rotate(181deg) brightness(94%) contrast(87%);
-}
-/*---------------------------------------*/
-
 @font-face {
     font-family: Roboto;
     src: url("../fonts/Roboto-Regular.ttf");
