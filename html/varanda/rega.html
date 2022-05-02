@@ -6,6 +6,7 @@
 
     </head>
     <body>
+<<<<<<< HEAD
         <div id="background">
 <<<<<<< HEAD
             <header>
@@ -26,6 +27,9 @@
 =======
             
             
+=======
+        <div id="background">      
+>>>>>>> 15661a3 (Hidden months/days by default on rega.html)
             <div id="rega">
                 <header>
                     <a href="varanda.html">Voltar</a>
@@ -34,7 +38,8 @@
                 </header>
                 <main id="listaRega">
                     <ul >
-                        <!--<li>
+                        <!-- PlaceHolder
+                            <li>
                             <h4>Rega1</h4>
                             <ul>
                                 <p>18:00 - 19:00</p>
@@ -46,22 +51,24 @@
                         </li>-->
                     </ul>
                 </main>
+                <footer>
+                    <a href="../main.html"><img src="https://cdn-icons.flaticon.com/png/512/5973/premium/5973800.png?token=exp=1651324922~hmac=2a24bcacc4feefc75992725b528e3b98" alt="Menu Principal" width="12%"></a>
+                </footer>
             </div>
 
             <div id="addRega" hidden>
                 <header>
-                    <a href="rega.html">Voltar</a>
+                    <a href="javascript:toggleAddRega()">Voltar</a>
                     <h1>Adicionar nova rega</h1>
                 </header>
                 <main>
                     <p>Nome     <input type="text" id="name"></p>
                     <br>
-                    <p>Início   <input type="time" id="init" value="12"></p>
+                    <p>Início   <input type="time" id="init" value=""></p>
                     <p>Fim      <input type="time" id="end"></p>     
                     <br>
-                    <p>Todos os Meses <input type="checkbox" id="everyMonth" checked >
-    
-                        <p>
+                    <p>Todos os Meses <input type="checkbox" id="everyMonth" checked onclick="hideToggleByClass('hideM')">
+                        <p hidden class="hideM">
                             De 
                             <select id="fromM">
                                 <option value="Janeiro" selected>Janeiro</option>
@@ -78,8 +85,7 @@
                                 <option value="Dezembro">Dezembro</option>
                             </select>
                         </p>
-    
-                        <p>
+                        <p hidden class="hideM">
                             A
                             <select id="toM">
                                 <option value="Janeiro">Janeiro</option>
@@ -98,8 +104,8 @@
                         </p> 
                     </p>
     
-                    <p>Todos os Dias  <input type="checkbox" id="everyDay" checked>
-                        <p>
+                    <p>Todos os Dias  <input type="checkbox" id="everyDay" checked onclick="hideToggleByClass('hideD')">
+                        <p hidden class="hideD">
                             De 
                             <select id="fromD">
                                 <option value="Segunda-feira" selected>Segunda-feira</option>
@@ -111,9 +117,7 @@
                                 <option value="Domingo">Domingo</option>
                             </select>
                         </p>
-    
-                    
-                        <p> A
+                        <p hidden class="hideD"> A
                             <select id="toD">
                                 <option value="Segunda-feira">Segunda-feira</option>
                                 <option value="Terça-feira">Terça-feira</option>
@@ -126,11 +130,11 @@
                         </p>
                     </p>
     
-                    <input type="button" value="Confirmar" onclick="addRega(); toggleAddRega()">
+                    <input type="button" value="Confirmar" onclick="addRega(); toggleAddRega();">
                 </main>
     
                 <footer>
-                    <p>TODO Footer</p>
+
                 </footer>
 >>>>>>> 8f65ecd8a45f21f0510544bb636aed20d205ab6a
         </div>

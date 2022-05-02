@@ -61,13 +61,6 @@ function addRega(){
 }
 
 function toggleAddRega() {
-    //elem = document.getElementById("rega");
-    //elem.setAttribute("hidden", false);
-
-    //elem = document.getElementById("addRega");
-    //elem.setAttribute("hidden", false);
-
-
     hideToggleById("rega");
     hideToggleById("addRega");
 }
