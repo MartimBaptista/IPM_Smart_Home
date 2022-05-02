@@ -9,7 +9,12 @@ function addNotification(){
 
     //Title
     const title = document.createElement("a");
-    title.appendChild(document.createTextNode(titleInput.value));
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    h = addZero(h);
+    m = addZero(m);
+    title.appendChild(document.createTextNode(h + ":" + m + " - " + titleInput.value));
     titleInput.value = "";
     title.className = "title";
     //Description
@@ -50,7 +55,12 @@ function removeNotification() {
     this.parentElement.parentElement.parentElement.remove();
 }
 
+function addZero(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+
 //Adding a starting notification for case use
 titleInput.value = "Intruso detetado!";
-descriptionInput.value = "Um intruso foi detetado idk what else u want to know";
+descriptionInput.value = "Intruso detetado na porta da frente, autoridades notificadas!";
 addNotification();
