@@ -2,6 +2,7 @@
     text-align: center;
     font-size: 400%;
     font-weight: bolder;
+    margin-bottom: 50;
 }
 
 main{
@@ -34,5 +35,15 @@ li{
     border-radius: 10px;
     border: 2px solid rgba(128, 128, 128, 0.5);
     background-color: #92BA92;
+}
 
+footer{
+    position: absolute;
+    bottom: 60;
+    width: 30%;
+    text-align: center;
+}
+
+img{
+    filter: invert(36%) sepia(8%) saturate(1497%) hue-rotate(181deg) brightness(94%) contrast(87%);
 }
