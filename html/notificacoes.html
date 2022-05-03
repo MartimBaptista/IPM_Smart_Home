@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../styles/defaultStyle&Res.css">
+        <link rel="stylesheet" href="../styles/notificationStyle.css">
     </head>
 
     <body>
@@ -12,11 +13,15 @@
                 </header>
                 <ul id="notificationList">
                 </ul>
-            </main>   
-                    
-        <script src="../scripts/notificationScript.js"></script>
-
+            </main>
         </div>
-        
+        <div id="outisde-controls">
+            <label for="a">Title:</label>
+            <input type="text" id="notification_title" name="a"><br>
+            <label for="a">Description:</label>
+            <input type="text" id="notification_description" name="a">
+            <input type="submit" id="send" value="Send">
+        </div>
+        <script src="../scripts/notificationScript.js"></script>
     </body>
 </html>
