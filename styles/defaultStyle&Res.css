@@ -46,6 +46,11 @@ img{
 #listaRega *{
     list-style: none;
 }
+
+.tabbed {
+    margin-left: 20px;
+}
+
 /*---------------------------------------*/
 
 @font-face {
