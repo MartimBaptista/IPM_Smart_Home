@@ -59,6 +59,10 @@ a {
     right: -280px;
     filter: invert(36%) sepia(8%) saturate(1497%) hue-rotate(181deg) brightness(94%) contrast(87%);
 }
+
+#listaRega *{
+    list-style: none;
+}
 /*---------------------------------------*/
 
 @font-face {
