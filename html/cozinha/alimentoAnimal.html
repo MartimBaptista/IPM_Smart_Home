@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../../styles/defaultStyle&Res.css">
+        <script src="/scripts/hideToggle.js"></script>
+        <script src="/scripts/animalFeederScript.js"></script>
+    </head>
+    <body>
+        <div id="background">      
+            <div id="feed">
+                <header>
+                    <a href="cozinha.html" id="VoltarButton">Voltar</a>
+                    <h2 align="center">Alimentador de Animais</h2>
+                     <button onclick="toggleAddFeed()"><img src="/imgs/add.png" alt="Adicionar novo Plano de Alimentação" width="10px" > Adicionar</button>
+                </header>
+                <main id="listaFeeder">
+                    
+                </main>
+                <footer>
+                    <a href="../main.html"><img src="https://cdn-icons.flaticon.com/png/512/5973/premium/5973800.png?token=exp=1651324922~hmac=2a24bcacc4feefc75992725b528e3b98" alt="Menu Principal" width="12%"></a>
+                </footer>
+            </div>
+
+            <div id="addFeed" hidden>
+                <header>
+                    <a href="javascript:toggleAddFeed()" id="VoltarButton">Voltar</a>
+                    <h1>Adicionar nova rega</h1>
+                </header>
+                <main>
+                    <p>Nome do Animal <input type="text" id="name"></p>
+                    <br>
+                    <span>Início   <input type="time" id="init" value=""></span> 
+                    <b>|</b> 
+                    <span> Fim <input type="time" id="end"></span>
+
+                    <p>Quantidade de Vezes/Dia <br> <input type="number" id="timesAmount" max="12" min="1" value="1" unit="g"></p>
+
+                    <p>Quantidade Total <br><input type="number" id="foodAmount" max="2000" min="200" value="200" step="25" >g</p>   
+
+                    
+    
+                    <input type="button" value="Confirmar" onclick="addFeed(); toggleAddFeed();">
+                </main>
+                
+            </main>
+            <footer>
+                <a href="../main.html"><img src="https://cdn-icons.flaticon.com/png/512/5973/premium/5973800.png?token=exp=1651324922~hmac=2a24bcacc4feefc75992725b528e3b98" alt="Menu Principal" width="12%"></a>
+            </footer>
+        </div>
+    </body>
+</html>
