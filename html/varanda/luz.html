@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../../styles/defaultStyle&Res.css">
+        <link rel="stylesheet" href="../../styles/luzesStyle.css">
+    </head>
+    <script src="../../scripts/sliderLuzes.js"></script>
+    <body>
+        <div id="background">
+            <header>
+                <a href="varanda.html" id="VoltarButton">Voltar</a>
+                <h1>Luz</h1>
+            </header>
+            <main>
+                <div class="sliderLuz">
+                    <span><img id="imgLuz" src="http://cdn.onlinewebfonts.com/svg/img_529591.png" alt="lowLuz" width="8%" ></span>
+                    <input type="range" min="0" max="100" value="50" class="slider" id="valorSlider" oninput="Update()">
+                    <span><img id="imgLuz" src="https://cdn-icons-png.flaticon.com/512/94/94950.png" alt="highLuz" width="8%"></span>
+                    <p>Luminosidade: <span id="lumValor">50</span>%</p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

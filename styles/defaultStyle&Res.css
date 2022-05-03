@@ -36,6 +36,16 @@ a {
     border-width: 4;
 }
 
+footer{
+    position: relative;
+    bottom: -290;
+    text-align: center;
+}
+
+img{
+    filter: invert(36%) sepia(8%) saturate(1497%) hue-rotate(181deg) brightness(94%) contrast(87%);
+}
+
 @font-face {
     font-family: Roboto;
     src: url("../fonts/Roboto-Regular.ttf");
